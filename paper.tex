@@ -1,0 +1,90 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.20 of 2017/10/04
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage{graphicx}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following line
+% to display URLs in blue roman font according to Springer's eBook style:
+% \renewcommand\UrlFont{\color{blue}\rmfamily}
+
+\begin{document}
+%
+\title{Generating the polish-language captions of digital images - a case study based on PCADI dataset}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{Mateusz Bartosiewicz\orcidID{0000-1111-2222-3333} \and
+Student1 \and Student2 \and Student3 \and
+Marcin Iwanowski\orcidID{2222--3333-4444-5555}}
+%
+\authorrunning{F. Author et al.}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{Warsaw University of Technology, \\Institute of Control and Industrial Electronics,\\
+ul.Koszykowa 75, 00-662 Warszawa, POLAND\\
+\email{\{jeden, drugi, trzeci\}@ee.pw.edu.pl}}
+%
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+The abstract should briefly summarize the contents of the paper in
+15--250 words.
+
+\keywords{First keyword  \and Second keyword \and Another keyword.}
+\end{abstract}
+%
+%
+\section{Introduction}
+
+Marcin
+
+
+
+konfrencja CORES
+
+\section{Datasets}
+
+Omówić zbiory danych (Flickr...)
+
+W szczególności: Polish corpus of annotated descriptions of images
+
+Mateusz
+Dataset AIDe (Annotated Image Descriptions) is a subset of images from Flick8k dataset. It have 1k of images with 2k descriptions. To maintain cohesion with original dataset the image IDs of Flickr8k were used. In AIDe all particular images belongs to the one class, although many elements could belong to multiple classes. Because of that images were reclassified with WordNet hyperonym hierarchy.Class types:
+\begin{enumerate}
+    \item Event
+    \item Entity
+    \item Outside-Inside classes
+\end{enumerate}
+To every image 2 descriptions were created by 2 separate authors with specific conditions. Captions must have proper punctuation and polish letters. Every text is tokenized and and morphologically analysed with Morfeusz (Woliń́ski, 2014)
+\section{Caption generation method} 
+
+Ogólnie o metodach generowania podpisów (omówić pokrótce kilka metod + referencje). I bardziej szczegółowo omówić metodę Karpthego
+
+Mateusz
+
+1-1.5 str
+
+
+\section{Comparison metrics}
+
+studenci
+
+\section{Tests}
+
+Mateusz + studenci
+
+\section{Conclusions}
+
+wspólnie
+
+\bibliography{bibliography.bib}
+\end{document}
