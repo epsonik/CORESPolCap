@@ -11,11 +11,53 @@
   doi     = {10.1109/TPAMI.2016.2598339},
 }
 
-@InProceedings{Wrblewska2018,
+@Article{Wrblewska2018,
   author    = {Alina Wr{\'o}blewska},
-  booktitle = {LREC},
   title     = {Polish Corpus of Annotated Descriptions of Images},
   year      = {2018},
+  booktitle = {LREC},
+}
+
+@Article{yao2018,
+  author    = {Yao, Ting and Pan, Yingwei and Li, Yehao and Mei, Tao},
+  title     = {Exploring visual relationship for image captioning},
+  year      = {2018},
+  pages     = {684--699},
+  booktitle = {Proceedings of the European conference on computer vision (ECCV)},
+}
+
+@Article{Vedantam2015Cider,
+  author    = {R. {Vedantam} and C. L. {Zitnick} and D. {Parikh}},
+  title     = {CIDEr: Consensus-based image description evaluation},
+  year      = {2015},
+  pages     = {4566-4575},
+  booktitle = {2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  doi       = {10.1109/CVPR.2015.7299087},
+}
+
+@Article{papineni2002bleu,
+  author    = {Papineni, Kishore and Roukos, Salim and Ward, Todd and Zhu, Wei-Jing},
+  title     = {Bleu: a method for automatic evaluation of machine translation},
+  year      = {2002},
+  pages     = {311--318},
+  booktitle = {Proceedings of the 40th annual meeting of the Association for Computational Linguistics},
+}
+
+@Article{banerjee2005meteor,
+  author    = {Banerjee, Satanjeev and Lavie, Alon},
+  title     = {METEOR: An automatic metric for MT evaluation with improved correlation with human judgments},
+  year      = {2005},
+  pages     = {65--72},
+  booktitle = {Proceedings of the acl workshop on intrinsic and extrinsic evaluation measures for machine translation and/or summarization},
+}
+
+@Article{lin2014microsoft,
+  author       = {Lin, Tsung-Yi and Maire, Michael and Belongie, Serge and Hays, James and Perona, Pietro and Ramanan, Deva and Doll{\'a}r, Piotr and Zitnick, C Lawrence},
+  title        = {Microsoft coco: Common objects in context},
+  year         = {2014},
+  pages        = {740--755},
+  booktitle    = {European conference on computer vision},
+  organization = {Springer},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
