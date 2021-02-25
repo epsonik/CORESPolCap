@@ -14,7 +14,7 @@
 
 \begin{document}
 %
-\title{Generating the polish-language captions of digital images - a case study based on PCADI dataset}
+\title{Generating the polish-language captions of digital images -- a case study based on PCADI dataset}
 %
 %\titlerunning{Abbreviated paper title}
 % If the paper title is too long for the running head, you can set
@@ -46,15 +46,38 @@ The abstract should briefly summarize the contents of the paper in
 \section{Introduction}
 
 Marcin
+- znaczeniu generowania podpisow pod obrazy
+- klopoty w przypadku wielu jezykow i jezyków fleksyjnych
+- metodach sieci glebokich (Karpathy)
+- zbiory danych i zbiór danych po polsku
+- cel pracy: weryfikacja mozliwosci zastosowania metody generowania podpisow w jezyku polskim 
+- realizacja: 
+* bierzemy zbiór Wrolewskiej
+* implementujemy metode Karpatyego
+* uczymy w różnych wariantach:
+1. podpisy oryginalne
+2. podpisy bez polskich znaków
+3. lematyzacja z polskimi znakami
+4. lematyzacja bez polskich znaków
+* wyniki weryfikujemy przy pomocy różnych metryk
+1. BLEU
+2. CIDER
+3. meteor
+4. BoW
+* wyniki:
+- podzial uczacy/testowy 70/30 (przygotowac wyniki dla czterech innych podzialow losowych w tym samym stosunku + dla podpisow w jeyzku angielskim w 2 wariantach z 2 zdaniami - tak jak po polsku i w pelnymi 5 zdaniami)
 
+\section{Related works}
 
+Ogólnie o metodach generowania podpisów (omówić pokrótce kilka metod + referencje). 
 
-konfrencja CORES
+Ogólnie o zbiorach danych z referencjami. 1. zbiory obrazów z podpisami angielskimi 2. zbiory w języku polskim w tym wspomieć o Wróblewskiej. 
 
-\section{Datasets}
+3/4 strony (15-20 refencji)
 
-Omówić zbiory danych (Flickr...)
+\section{Generating caption in polish language}
 
+\section{Dataset}
 W szczególności: Polish corpus of annotated descriptions of images
 
 Mateusz
@@ -64,17 +87,32 @@ Dataset AIDe (Annotated Image Descriptions) is a subset of images from Flick8k d
     \item Entity
     \item Outside-Inside classes
 \end{enumerate}
-To every image 2 descriptions were created by 2 separate authors with specific conditions. Captions must have proper punctuation and polish letters. Every text is tokenized and and morphologically analysed with Morfeusz (Woliń́ski, 2014)
-\section{Caption generation method} 
-\cite{7534740}
-Ogólnie o metodach generowania podpisów (omówić pokrótce kilka metod + referencje). I bardziej szczegółowo omówić metodę Karpthego
+To every image 2 descriptio
+ns were created by 2 separate authors with specific conditions. Captions must have proper punctuation and polish letters. Every text is tokenized and and morphologically analysed with Morfeusz (Woliń́ski, 2014)
+
+\subsection{Caption generation method} 
+\cite{Karpathy2017}
+I bardziej szczegółowo omówić metodę Karpthego
 
 Mateusz
 
 1-1.5 str
 
+\subsection{Experimetal setup}
 
-\section{Comparison metrics}
+W jaki sposób testujemy
+
+(podział uczący/ testowy, kilka podziałów, warianty uczenia)
+
+\subsection{Comparison metrics}
+
+Metody walidacji wyników i tu o metrykach
+
+\subsubsection{BLEU}
+
+\subsubsection{CIDER}
+\subsubsection{meteor}
+\subsubsection{BoW}
 
 studenci
 
